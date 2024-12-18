@@ -1,0 +1,19 @@
+{
+  "name": "clase4",
+  "version": "1.0.0",
+  "main": "app1.js",
+  "scripts": {
+    "dev": "node app1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "zod": "3.24.1"
+  }
+}

@@ -1,0 +1,32 @@
+### Recuperar todas las películas
+GET http://localhost:3999/movies
+
+### Recuperar una película
+GET http://localhost:3999/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Recuperar todas las películas de un género
+GET http://localhost:3999/movies/?genre=action
+
+### Crear una película
+POST http://localhost:3999/movies
+Content-Type: application/json
+
+{
+    "title": "The Godfather",
+    "year": 1975,
+    "director": "David Fincher",
+    "poster": "https://i.pinimg.com",
+    "genre": [
+    "Action",
+     "Drama"]
+}
+
+### Actualizar una película
+PATCH http://localhost:3999/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "year": "1922"
+}
+
+
