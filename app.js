@@ -1,9 +1,9 @@
-const express = require('express');
-const crypto = require('crypto');
-const cors = require('cors');
-const movies = require('./movies.json');
-const { validateMovie } = require('./schemas/movies');
-const { validatePartialMovie } = require('./schemas/movies');
+const express = require('express')
+const crypto = require('node:crypto')
+const cors = require('cors')
+
+const movies = require('./movies.json')
+const { validateMovie, validatePartialMovie } = require('./schemas/movies')
 
 const app = express()
 app.use(express.json())
@@ -112,7 +112,7 @@ app.patch('/movies/:id', (req, res) => {
   return res.json(updateMovie)
 })
 
-const PORT = process.env.PORT ?? 3999
+const PORT = process.env.PORT ?? 1234
 
 app.listen(PORT, () => {
   console.log(`server listening on port http://localhost:${PORT}`)
